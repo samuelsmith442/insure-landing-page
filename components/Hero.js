@@ -69,16 +69,20 @@ const Hero = () => {
               </Link>
             </div>
             
-            <div className="hidden md:block md:w-1/2 relative">
-              {/* Desktop image - positioned to overflow into next section */}
-              <div className="absolute right-18 bottom-0 translate-y-[75%] z-10">
-                <div className="relative">
+            {/* Desktop image container */}
+            <div className="hidden md:block md:w-1/2 relative overflow-visible">
+              {/* Image wrapper with controlled width */}
+              <div className="absolute right-0 md:right-[5%] lg:right-[10%] bottom-0 translate-y-[75%] z-10">
+                <div className="relative" style={{ width: '540px', maxWidth: '100%' }}>
                   <Image 
                     src="/images/image-intro-desktop.jpg" 
                     alt="Family walking together" 
-                    width={600} 
+                    width={540} 
                     height={650}
-                    className="max-w-none"
+                    style={{
+                      maxWidth: '100%',
+                      height: 'auto'
+                    }}
                     priority
                   />
                 </div>

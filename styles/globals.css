@@ -35,3 +35,25 @@ h1, h2, h3, h4, h5, h6 {
     @apply border-very-dark-violet text-very-dark-violet hover:bg-very-dark-violet hover:text-white;
   }
 }
+
+/* Custom class for hero desktop image positioning */
+.hero-desktop-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(75%);
+  z-index: 10;
+  max-width: 90%;
+}
+
+@media (min-width: 1024px) {
+  .hero-desktop-image {
+    right: 5%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-desktop-image {
+    right: 10%;
+  }
+}
