@@ -72,7 +72,7 @@ const Hero = () => {
             {/* Desktop image container */}
             <div className="hidden md:block md:w-1/2 relative overflow-visible">
               {/* Image wrapper with controlled width */}
-              <div className="absolute right-0 md:right-[5%] lg:right-[10%] bottom-0 translate-y-[75%] z-10">
+              <div className="absolute md:right-[15%] lg:right-[20%] xl:right-[25%] bottom-0 translate-y-[75%] z-10">
                 <div className="relative" style={{ width: '540px', maxWidth: '100%' }}>
                   <Image 
                     src="/images/image-intro-desktop.jpg" 
