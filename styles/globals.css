@@ -45,21 +45,3 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
   max-width: 90%;
 }
-
-@media (min-width: 768px) {
-  .hero-desktop-image {
-    right: 15%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-desktop-image {
-    right: 20%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .hero-desktop-image {
-    right: 25%;
-  }
-}
